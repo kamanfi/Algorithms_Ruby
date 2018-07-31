@@ -1,7 +1,6 @@
 def quick_sort(arr)
 
-
-
+	# quick sort algorithm that picks midlle element as pivot
 	#base case
 	if arr.size == 1 
 		return [arr[0]]

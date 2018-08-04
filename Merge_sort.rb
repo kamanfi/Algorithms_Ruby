@@ -26,13 +26,17 @@ def merge_sort(array)
 	   		larray=[]
 	   	end
 	   end
-	   p "pass 1"
-	   return  p mergedArray
+	   return mergedArray
 	end
 
 
 
+array = []
+10.times do
+	array << rand(100)
+end
 
-array=[10,9,8,7,6,5,4,3,2,1]
+p "before sorting"
+p array
+p 'after sorting'
 p merge_sort(array)
-

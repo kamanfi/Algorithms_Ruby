@@ -12,10 +12,5 @@ def bubble_sort(arr)
 	end
 end
 
-array=[*1..1000]
-p binary_search(array,463)
-p binary_search(array, 1000)
-p binary_search(array, 0)
-p binary_search(array, -1)
-p binary_search(array,1)
-p binary_search([], 34)
+array=[4,5,7,1,3,77,3,54,6,-1]
+p bubble_sort array

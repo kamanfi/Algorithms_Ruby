@@ -1,15 +1,16 @@
 def bubble_sort(arr)
+	sorted = false
 
-	arr.each do |i|
-		arr.each_with_index do |e, eindex|
-			if eindex < arr.size-1
-				if arr[eindex] > arr[eindex+1]
-					arr[eindex] = arr[eindex+1]
-					arr[eindex+1] = e
-				end
+	while !sorted
+		sorted = true
+		(0...arr.length-1).each do |index|
+			if arr[index] > arr[index+1]
+				arr[index], arr[index+1] = arr[index+1], arr[index]
+				sorted = false
 			end
-		end
+		end 
 	end
+	arr
 end
 
 array=[4,5,7,1,3,77,3,54,6,-1]
